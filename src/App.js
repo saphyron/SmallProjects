@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <nav>
-        <Link to="/">Home</Link> | <Link to="/pathfinder">Pathfinder</Link>
+        <Link to="/">Home</Link> | <Link to="/pathfinder">Pathfinder</Link> | <a href="https://github.com/saphyron/SmallProjects/tree/main">Github Page</a>
         {/* Add other links as needed */}
       </nav>
       <Routes>
