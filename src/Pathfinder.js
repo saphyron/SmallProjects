@@ -11,14 +11,17 @@ function dijkstra(systems, start, goal, speed, ignoreLowSecurity, ignoredSystems
     while (unvisited.size > 0) {
         let currentSystem = Array.from(unvisited).reduce((a, b) => shortestTimes[a] < shortestTimes[b] ? a : b);
 
-        if (shortestTimes[currentSystem] === Infinity) break;
+        if (shortestTimes[currentSystem] === Infinity) {
+            // If the shortest time for the current system is still Infinity,
+            // it means there's no valid path to this system under the given constraints
+            break;
+        }
 
         for (let connection of systems[currentSystem].connections) {
             let neighbor = connection["system-name"];
 
-            // Check if the neighbor exists in the systems object and is not ignored
             if (!systems[neighbor] || ignoredSystems.includes(neighbor)) {
-                continue; // Skip if the neighbor system is not found or is in the ignored list
+                continue;
             }
 
             if (ignoreLowSecurity && systems[neighbor]["security-status"] === "Low") continue;
@@ -31,6 +34,7 @@ function dijkstra(systems, start, goal, speed, ignoreLowSecurity, ignoredSystems
                 predecessors[neighbor] = currentSystem;
             }
         }
+
         unvisited.delete(currentSystem);
     }
 
@@ -39,7 +43,7 @@ function dijkstra(systems, start, goal, speed, ignoreLowSecurity, ignoredSystems
     let current = goal;
     while (current !== start) {
         if (!predecessors[current]) {
-            return { path: null, totalTime: null };
+            return { path: null, totalTime: null, message: "No valid route found under the given constraints." };
         }
         path.push(current);
         current = predecessors[current];
@@ -50,4 +54,4 @@ function dijkstra(systems, start, goal, speed, ignoreLowSecurity, ignoredSystems
     return { path: path, totalTime: shortestTimes[goal] };
 }
 
-module.exports = {dijkstra};
+module.exports = { dijkstra };
