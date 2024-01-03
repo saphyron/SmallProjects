@@ -418,6 +418,14 @@
         ],
         "security-status": "High"
     },
+    "Eskunen": {
+        "system-name": "Eskunen",
+        "connections": [
+            {"system-name": "Outuni", "distance": 1},
+            {"system-name": "Ohmahailer", "distance": 1}
+        ],
+        "security-status": "High"
+    },
     "Ohmahailer": {
         "system-name": "Ohmahailer",
         "connections": [
