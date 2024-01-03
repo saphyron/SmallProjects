@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import HomePage from './Homepage';
+import PathfinderPage from './EveSystemFinderFrontEnd';
+// Import other components as needed
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <nav>
+        <Link to="/">Home</Link> | <Link to="/pathfinder">Pathfinder</Link> | <a target='_blank' rel='noopener noreferrer' href="https://github.com/saphyron/SmallProjects/tree/main">Github Page</a>
+        {/* Add other links as needed */}
+      </nav>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/pathfinder" element={<PathfinderPage />} />
+        {/* Add other routes as needed */}
+      </Routes>
+    </Router>
   );
 }
 
