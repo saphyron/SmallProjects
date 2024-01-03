@@ -1,0 +1,35 @@
+.navigation-container {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .tab {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tab.active {
+    background-color: #555;
+  }
+  
+  .tab:hover {
+    background-color: #555;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
