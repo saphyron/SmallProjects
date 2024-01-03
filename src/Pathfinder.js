@@ -50,4 +50,4 @@ function dijkstra(systems, start, goal, speed, ignoreLowSecurity, ignoredSystems
     return { path: path, totalTime: shortestTimes[goal] };
 }
 
-export { dijkstra };
+module.exports = {dijkstra};
