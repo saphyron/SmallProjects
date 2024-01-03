@@ -1,795 +1,795 @@
 {
     "Otomainen": {
         "system-name": "Otomainen",
-        "connections": [{"system-name": "Ihakana", "distance": 60}],
+        "connections": [{"system-name": "Ihakana", "distance": 1}],
         "security-status": "High"
     },
     "Ihakana": {
         "system-name": "Ihakana",
         "connections": [
-            {"system-name": "Otsela", "distance": 30},
-            {"system-name": "Otomainen", "distance": 25},
-            {"system-name": "Otitoh", "distance": 45},
-            {"system-name": "Friggi", "distance": 10}
+            {"system-name": "Otsela", "distance": 1},
+            {"system-name": "Otomainen", "distance": 1},
+            {"system-name": "Otitoh", "distance": 1},
+            {"system-name": "Friggi", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Otitoh": {
         "system-name": "Otitoh",
         "connections": [
-            {"system-name": "Ihakana", "distance": 90},
-            {"system-name": "Friggi", "distance": 15}
+            {"system-name": "Ihakana", "distance": 1},
+            {"system-name": "Friggi", "distance": 1}
         ],
         "security-status": "High"
     },
     "Otsela": {
         "system-name": "Otsela",
         "connections": [
-            {"system-name": "Ihakana", "distance": 90},
-            {"system-name": "Walvalin", "distance": 15},
-            {"system-name": "Vasala", "distance": 15},
-            {"system-name": "Kiainti", "distance": 15},
-            {"system-name": "Hentogaira", "distance": 15}
+            {"system-name": "Ihakana", "distance": 1},
+            {"system-name": "Walvalin", "distance": 1},
+            {"system-name": "Vasala", "distance": 1},
+            {"system-name": "Kiainti", "distance": 1},
+            {"system-name": "Hentogaira", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Walvalin": {
         "system-name": "Walvalin",
         "connections": [
-            {"system-name": "Otsela", "distance": 90},
-            {"system-name": "Kiainti", "distance": 15},
-            {"system-name": "Vasala", "distance": 15}
+            {"system-name": "Otsela", "distance": 1},
+            {"system-name": "Kiainti", "distance": 1},
+            {"system-name": "Vasala", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Vasala": {
         "system-name": "Vasala",
         "connections": [
-            {"system-name": "Walvalin", "distance": 90},
-            {"system-name": "Kiainti", "distance": 15},
-            {"system-name": "Vouskiaho", "distance": 15}
+            {"system-name": "Walvalin", "distance": 1},
+            {"system-name": "Kiainti", "distance": 1},
+            {"system-name": "Vouskiaho", "distance": 1}
         ],
         "security-status": "High"
     },
     "Vouskiaho": {
         "system-name": "Vouskiaho",
         "connections": [
-            {"system-name": "Vasala", "distance": 90},
-            {"system-name": "Uchoshi", "distance": 15}
+            {"system-name": "Vasala", "distance": 1},
+            {"system-name": "Uchoshi", "distance": 1}
         ],
         "security-status": "High"
     },
     "Uchoshi": {
         "system-name": "Uchoshi",
         "connections": [
-            {"system-name": "Vouskiaho", "distance": 90},
-            {"system-name": "Mastakomo", "distance": 15}
+            {"system-name": "Vouskiaho", "distance": 1},
+            {"system-name": "Mastakomo", "distance": 1}
         ],
         "security-status": "High"
     },
     "Mastakomo": {
         "system-name": "Mastakomo",
         "connections": [
-            {"system-name": "Uchoshi", "distance": 90},
-            {"system-name": "Eruka", "distance": 15},
-            {"system-name": "Osaa", "distance": 15},
-            {"system-name": "Ohkunen", "distance": 15}
+            {"system-name": "Uchoshi", "distance": 1},
+            {"system-name": "Eruka", "distance": 1},
+            {"system-name": "Osaa", "distance": 1},
+            {"system-name": "Ohkunen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Eruka": {
         "system-name": "Eruka",
         "connections": [
-            {"system-name": "Mastakomo", "distance": 90},
-            {"system-name": "Osaa", "distance": 15}
+            {"system-name": "Mastakomo", "distance": 1},
+            {"system-name": "Osaa", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Osaa": {
         "system-name": "Osaa",
         "connections": [
-            {"system-name": "Mastakomo", "distance": 90},
-            {"system-name": "Eruka", "distance": 15}
+            {"system-name": "Mastakomo", "distance": 1},
+            {"system-name": "Eruka", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Ohkunen": {
         "system-name": "Ohkunen",
         "connections": [
-            {"system-name": "Mastakomo", "distance": 90},
-            {"system-name": "Obe", "distance": 15}
+            {"system-name": "Mastakomo", "distance": 1},
+            {"system-name": "Obe", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Obe": {
         "system-name": "Obe",
         "connections": [
-            {"system-name": "Ohkunen", "distance": 90}
+            {"system-name": "Ohkunen", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Kiainti": {
         "system-name": "Kiainti",
         "connections": [
-            {"system-name": "Vasala", "distance": 90},
-            {"system-name": "Walvalin", "distance": 15},
-            {"system-name": "Otsela", "distance": 15},
-            {"system-name": "Hentogaira", "distance": 15}
+            {"system-name": "Vasala", "distance": 1},
+            {"system-name": "Walvalin", "distance": 1},
+            {"system-name": "Otsela", "distance": 1},
+            {"system-name": "Hentogaira", "distance": 1}
         ],
         "security-status": "High"
     },
     "Hentogaira": {
         "system-name": "Hentogaira",
         "connections": [
-            {"system-name": "Kiainti", "distance": 90},
-            {"system-name": "Otsela", "distance": 15},
-            {"system-name": "Akkilen", "distance": 15}
+            {"system-name": "Kiainti", "distance": 1},
+            {"system-name": "Otsela", "distance": 1},
+            {"system-name": "Akkilen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Akkilen": {
         "system-name": "Akkilen",
         "connections": [
-            {"system-name": "Hentogaira", "distance": 90},
-            {"system-name": "Soshin", "distance": 15},
-            {"system-name": "Vattuolen", "distance": 15},
-            {"system-name": "Onuse", "distance": 15}
+            {"system-name": "Hentogaira", "distance": 1},
+            {"system-name": "Soshin", "distance": 1},
+            {"system-name": "Vattuolen", "distance": 1},
+            {"system-name": "Onuse", "distance": 1}
         ],
         "security-status": "High"
     },
     "Soshin": {
         "system-name": "Soshin",
         "connections": [
-            {"system-name": "Akkilen", "distance": 90},
-            {"system-name": "Vattuolen", "distance": 15},
-            {"system-name": "Silen", "distance": 15}
+            {"system-name": "Akkilen", "distance": 1},
+            {"system-name": "Vattuolen", "distance": 1},
+            {"system-name": "Silen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Silen": {
         "system-name": "Silen",
         "connections": [
-            {"system-name": "Soshin", "distance": 90}
+            {"system-name": "Soshin", "distance": 1}
         ],
         "security-status": "High"
     },
     "Onuse": {
         "system-name": "Onuse",
         "connections": [
-            {"system-name": "Akkilen", "distance": 90},
-            {"system-name": "Keikaken", "distance": 15},
-            {"system-name": "Vattuolen", "distance": 15}
+            {"system-name": "Akkilen", "distance": 1},
+            {"system-name": "Keikaken", "distance": 1},
+            {"system-name": "Vattuolen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Keikaken": {
         "system-name": "Keikaken",
         "connections": [
-            {"system-name": "Onuse", "distance": 90},
-            {"system-name": "Ukkalen", "distance": 15}
+            {"system-name": "Onuse", "distance": 1},
+            {"system-name": "Ukkalen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Ukkalen": {
         "system-name": "Ukkalen",
         "connections": [
-            {"system-name": "Keikaken", "distance": 90}
+            {"system-name": "Keikaken", "distance": 1}
         ],
         "security-status": "High"
     },
     "Vattuolen": {
         "system-name": "Vattuolen",
         "connections": [
-            {"system-name": "Soshin", "distance": 90},
-            {"system-name": "Akkilen", "distance": 15},
-            {"system-name": "Uoyonen", "distance": 15}
+            {"system-name": "Soshin", "distance": 1},
+            {"system-name": "Akkilen", "distance": 1},
+            {"system-name": "Uoyonen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Uoyonen": {
         "system-name": "Uoyonen",
         "connections": [
-            {"system-name": "Vattuolen", "distance": 90},
-            {"system-name": "Gekutami", "distance": 15}
+            {"system-name": "Vattuolen", "distance": 1},
+            {"system-name": "Gekutami", "distance": 1}
         ],
         "security-status": "High"
     },
     "Gekutami": {
         "system-name": "Gekutami",
         "connections": [
-            {"system-name": "Uoyonen", "distance": 90},
-            {"system-name": "Jakanerva", "distance": 15}
+            {"system-name": "Uoyonen", "distance": 1},
+            {"system-name": "Jakanerva", "distance": 1}
         ],
         "security-status": "High"
     },
     "Jakanerva": {
         "system-name": "Jakanerva",
         "connections": [
-            {"system-name": "Gekutami", "distance": 90},
-            {"system-name": "Saisio", "distance": 15},
-            {"system-name": "Hampinen", "distance": 15}
+            {"system-name": "Gekutami", "distance": 1},
+            {"system-name": "Saisio", "distance": 1},
+            {"system-name": "Hampinen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Hampinen": {
         "system-name": "Hampinen",
         "connections": [
-            {"system-name": "Jakanerva", "distance": 90},
-            {"system-name": "Ikami", "distance": 15},
-            {"system-name": "Hurtoken", "distance": 15}
+            {"system-name": "Jakanerva", "distance": 1},
+            {"system-name": "Ikami", "distance": 1},
+            {"system-name": "Hurtoken", "distance": 1}
         ],
         "security-status": "High"
     },
     "Hurtoken": {
         "system-name": "Hurtoken",
         "connections": [
-            {"system-name": "Hampinen", "distance": 90},
-            {"system-name": "Abagawa", "distance": 15}
+            {"system-name": "Hampinen", "distance": 1},
+            {"system-name": "Abagawa", "distance": 1}
         ],
         "security-status": "High"
     },
     "Abagawa": {
         "system-name": "Abagawa",
         "connections": [
-            {"system-name": "Hurtoken", "distance": 90},
-            {"system-name": "Saisio", "distance": 15}
+            {"system-name": "Hurtoken", "distance": 1},
+            {"system-name": "Saisio", "distance": 1}
         ],
         "security-status": "High"
     },
     "Saisio": {
         "system-name": "Saisio",
         "connections": [
-            {"system-name": "Abagawa", "distance": 90},
-            {"system-name": "Jakanerva", "distance": 15},
-            {"system-name": "Nomaa", "distance": 15}
+            {"system-name": "Abagawa", "distance": 1},
+            {"system-name": "Jakanerva", "distance": 1},
+            {"system-name": "Nomaa", "distance": 1}
         ],
         "security-status": "High"
     },
     "Nomaa": {
         "system-name": "Nomaa",
         "connections": [
-            {"system-name": "Saisio", "distance": 90},
-            {"system-name": "Geras", "distance": 15},
-            {"system-name": "Poinen", "distance": 15}
+            {"system-name": "Saisio", "distance": 1},
+            {"system-name": "Geras", "distance": 1},
+            {"system-name": "Poinen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Geras": {
         "system-name": "Geras",
         "connections": [
-            {"system-name": "Nomaa", "distance": 90},
-            {"system-name": "Tuuruaunas", "distance": 15}
+            {"system-name": "Nomaa", "distance": 1},
+            {"system-name": "Tuuruaunas", "distance": 1}
         ],
         "security-status": "High"
     },
     "Tuuruaunas": {
         "system-name": "Tuuruaunas",
         "connections": [
-            {"system-name": "Geras", "distance": 90},
-            {"system-name": "Sirseshin", "distance": 15},
-            {"system-name": "Shihuken", "distance": 15}
+            {"system-name": "Geras", "distance": 1},
+            {"system-name": "Sirseshin", "distance": 1},
+            {"system-name": "Shihuken", "distance": 1}
         ],
         "security-status": "High"
     },
     "Sirseshin": {
         "system-name": "Sirseshin",
         "connections": [
-            {"system-name": "Inaro", "distance": 90},
-            {"system-name": "Tuuruaunas", "distance": 15}
+            {"system-name": "Inaro", "distance": 1},
+            {"system-name": "Tuuruaunas", "distance": 1}
         ],
         "security-status": "High"
     },
     "Inaro": {
         "system-name": "Inaro",
         "connections": [
-            {"system-name": "Sirppala", "distance": 90},
-            {"system-name": "Sirseshin", "distance": 15}
+            {"system-name": "Sirppala", "distance": 1},
+            {"system-name": "Sirseshin", "distance": 1}
         ],
         "security-status": "High"
     },
     "Sirppala": {
         "system-name": "Sirppala",
         "connections": [
-            {"system-name": "Inaro", "distance": 90},
-            {"system-name": "Urlen", "distance": 15}
+            {"system-name": "Inaro", "distance": 1},
+            {"system-name": "Urlen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Urlen": {
         "system-name": "Urlen",
         "connections": [
-            {"system-name": "Kisogo", "distance": 90},
-            {"system-name": "Sirppala", "distance": 15},
-            {"system-name": "Unpas", "distance": 15},
-            {"system-name": "Perimeter", "distance": 15}
+            {"system-name": "Kisogo", "distance": 1},
+            {"system-name": "Sirppala", "distance": 1},
+            {"system-name": "Unpas", "distance": 1},
+            {"system-name": "Perimeter", "distance": 1}
         ],
         "security-status": "High"
     },
     "Unpas": {
         "system-name": "Unpas",
         "connections": [
-            {"system-name": "Urlen", "distance": 90},
-            {"system-name": "Uitra", "distance": 15},
-            {"system-name": "Shihuken", "distance": 15}
+            {"system-name": "Urlen", "distance": 1},
+            {"system-name": "Uitra", "distance": 1},
+            {"system-name": "Shihuken", "distance": 1}
         ],
         "security-status": "High"
     },
     "Uitra": {
         "system-name": "Uitra",
         "connections": [
-            {"system-name": "Unpas", "distance": 90}
+            {"system-name": "Unpas", "distance": 1}
         ],
         "security-status": "High"
     },
     "Shihuken": {
         "system-name": "Shihuken",
         "connections": [
-            {"system-name": "Tuuruaunas", "distance": 90},
-            {"system-name": "Unpas", "distance": 15}
+            {"system-name": "Tuuruaunas", "distance": 1},
+            {"system-name": "Unpas", "distance": 1}
         ],
         "security-status": "High"
     },
     "Kisogo": {
         "system-name": "Kisogo",
         "connections": [
-            {"system-name": "Urlen", "distance": 90}
+            {"system-name": "Urlen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Perimeter": {
         "system-name": "Perimeter",
         "connections": [
-            {"system-name": "Urlen", "distance": 90},
-            {"system-name": "Maurasi", "distance": 15},
-            {"system-name": "Jita", "distance": 15},
-            {"system-name": "Niyabainen", "distance": 15}
+            {"system-name": "Urlen", "distance": 1},
+            {"system-name": "Maurasi", "distance": 1},
+            {"system-name": "Jita", "distance": 1},
+            {"system-name": "Niyabainen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Niyabainen": {
         "system-name": "Niyabainen",
         "connections": [
-            {"system-name": "Perimeter", "distance": 90},
-            {"system-name": "Jita", "distance": 15},
-            {"system-name": "New Caldari", "distance": 15},
-            {"system-name": "Tunttaras", "distance": 15}
+            {"system-name": "Perimeter", "distance": 1},
+            {"system-name": "Jita", "distance": 1},
+            {"system-name": "New Caldari", "distance": 1},
+            {"system-name": "Tunttaras", "distance": 1}
         ],
         "security-status": "High"
     },
     "Tunttaras": {
         "system-name": "Tunttaras",
         "connections": [
-            {"system-name": "Niyabainen", "distance": 90},
-            {"system-name": "Ikuchi", "distance": 15}
+            {"system-name": "Niyabainen", "distance": 1},
+            {"system-name": "Ikuchi", "distance": 1}
         ],
         "security-status": "High"
     },
     "Ikuchi": {
         "system-name": "Ikuchi",
         "connections": [
-            {"system-name": "Tunttaras", "distance": 90},
-            {"system-name": "Jita", "distance": 15},
-            {"system-name": "Hirtamon", "distance": 15},
-            {"system-name": "Ansila", "distance": 15}
+            {"system-name": "Tunttaras", "distance": 1},
+            {"system-name": "Jita", "distance": 1},
+            {"system-name": "Hirtamon", "distance": 1},
+            {"system-name": "Ansila", "distance": 1}
         ],
         "security-status": "High"
     },
     "Hirtamon": {
         "system-name": "Hirtamon",
         "connections": [
-            {"system-name": "Ikuchi", "distance": 90},
-            {"system-name": "New Caldari", "distance": 15},
-            {"system-name": "Aokannitoh", "distance": 15},
-            {"system-name": "Ansila", "distance": 15}
+            {"system-name": "Ikuchi", "distance": 1},
+            {"system-name": "New Caldari", "distance": 1},
+            {"system-name": "Aokannitoh", "distance": 1},
+            {"system-name": "Ansila", "distance": 1}
         ],
         "security-status": "High"
     },
     "Aokannitoh": {
         "system-name": "Aokannitoh",
         "connections": [
-            {"system-name": "Hirtamon", "distance": 90}
+            {"system-name": "Hirtamon", "distance": 1}
         ],
         "security-status": "High"
     },
     "Ansila": {
         "system-name": "Ansila",
         "connections": [
-            {"system-name": "Ikuchi", "distance": 90},
-            {"system-name": "Hirtamon", "distance": 15},
-            {"system-name": "Hykkota", "distance": 15}
+            {"system-name": "Ikuchi", "distance": 1},
+            {"system-name": "Hirtamon", "distance": 1},
+            {"system-name": "Hykkota", "distance": 1}
         ],
         "security-status": "High"
     },
     "Hykkota": {
         "system-name": "Hykkota",
         "connections": [
-            {"system-name": "Ansila", "distance": 90},
-            {"system-name": "Outuni", "distance": 15},
-            {"system-name": "Ohmahailer", "distance": 15}
+            {"system-name": "Ansila", "distance": 1},
+            {"system-name": "Outuni", "distance": 1},
+            {"system-name": "Ohmahailer", "distance": 1}
         ],
         "security-status": "High"
     },
     "Outuni": {
         "system-name": "Outuni",
         "connections": [
-            {"system-name": "Hykkota", "distance": 90},
-            {"system-name": "Ohmahailer", "distance": 15},
-            {"system-name": "Eskunen", "distance": 15}
+            {"system-name": "Hykkota", "distance": 1},
+            {"system-name": "Ohmahailer", "distance": 1},
+            {"system-name": "Eskunen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Ohmahailer": {
         "system-name": "Ohmahailer",
         "connections": [
-            {"system-name": "Eskunen", "distance": 90},
-            {"system-name": "Hykkota", "distance": 15},
-            {"system-name": "Outuni", "distance": 15}
+            {"system-name": "Eskunen", "distance": 1},
+            {"system-name": "Hykkota", "distance": 1},
+            {"system-name": "Outuni", "distance": 1}
         ],
         "security-status": "High"
     },
     "New Caldari": {
         "system-name": "New Caldari",
         "connections": [
-            {"system-name": "Hirtamon", "distance": 90},
-            {"system-name": "Niyabainen", "distance": 15},
-            {"system-name": "Jita", "distance": 15},
-            {"system-name": "Malkalen", "distance": 15}
+            {"system-name": "Hirtamon", "distance": 1},
+            {"system-name": "Niyabainen", "distance": 1},
+            {"system-name": "Jita", "distance": 1},
+            {"system-name": "Malkalen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Malkalen": {
         "system-name": "Malkalen",
         "connections": [
-            {"system-name": "New Caldari", "distance": 90},
-            {"system-name": "Sobaseki", "distance": 15},
-            {"system-name": "Shihuken", "distance": 15}
+            {"system-name": "New Caldari", "distance": 1},
+            {"system-name": "Sobaseki", "distance": 1},
+            {"system-name": "Shihuken", "distance": 1}
         ],
         "security-status": "High"
     },
     "Sobaseki": {
         "system-name": "Sobaseki",
         "connections": [
-            {"system-name": "Jita", "distance": 90},
-            {"system-name": "Malkalen", "distance": 15}
+            {"system-name": "Jita", "distance": 1},
+            {"system-name": "Malkalen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Jita": {
         "system-name": "Jita",
         "connections": [
-            {"system-name": "Perimeter", "distance": 90},
-            {"system-name": "Niyabainen", "distance": 15},
-            {"system-name": "New Caldari", "distance": 15},
-            {"system-name": "Sobaseki", "distance": 15},
-            {"system-name": "Muvolailen", "distance": 15},
-            {"system-name": "Maurasi", "distance": 15}
+            {"system-name": "Perimeter", "distance": 1},
+            {"system-name": "Niyabainen", "distance": 1},
+            {"system-name": "New Caldari", "distance": 1},
+            {"system-name": "Sobaseki", "distance": 1},
+            {"system-name": "Muvolailen", "distance": 1},
+            {"system-name": "Maurasi", "distance": 1}
         ],
         "security-status": "High"
     },
     "Muvolailen": {
         "system-name": "Muvolailen",
         "connections": [
-            {"system-name": "Jita", "distance": 90},
-            {"system-name": "Maurasi", "distance": 15}
+            {"system-name": "Jita", "distance": 1},
+            {"system-name": "Maurasi", "distance": 1}
         ],
         "security-status": "High"
     },
     "Maurasi": {
         "system-name": "Maurasi",
         "connections": [
-            {"system-name": "Jita", "distance": 90},
-            {"system-name": "Perimeter", "distance": 15},
-            {"system-name": "Itamo", "distance": 15}
+            {"system-name": "Jita", "distance": 1},
+            {"system-name": "Perimeter", "distance": 1},
+            {"system-name": "Itamo", "distance": 1}
         ],
         "security-status": "High"
     },
     "Itamo": {
         "system-name": "Itamo",
         "connections": [
-            {"system-name": "Jatate", "distance": 90},
-            {"system-name": "Vaankalen", "distance": 15},
-            {"system-name": "Kylmabe", "distance": 15},
-            {"system-name": "Ahtulaima", "distance": 15},
-            {"system-name": "Mitsolen", "distance": 15}
+            {"system-name": "Jatate", "distance": 1},
+            {"system-name": "Vaankalen", "distance": 1},
+            {"system-name": "Kylmabe", "distance": 1},
+            {"system-name": "Ahtulaima", "distance": 1},
+            {"system-name": "Mitsolen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Jatate": {
         "system-name": "Jatate",
         "connections": [
-            {"system-name": "Itamo", "distance": 90}
+            {"system-name": "Itamo", "distance": 1}
         ],
         "security-status": "High"
     },
     "Vaankalen": {
         "system-name": "Vaankalen",
         "connections": [
-            {"system-name": "Itamo", "distance": 90}
+            {"system-name": "Itamo", "distance": 1}
         ],
         "security-status": "High"
     },
     "Kylmabe": {
         "system-name": "Kylmabe",
         "connections": [
-            {"system-name": "Itamo", "distance": 90}
+            {"system-name": "Itamo", "distance": 1}
         ],
         "security-status": "High"
     },
     "Ahtulaima": {
         "system-name": "Ahtulaima",
         "connections": [
-            {"system-name": "Itamo", "distance": 90}
+            {"system-name": "Itamo", "distance": 1}
         ],
         "security-status": "High"
     },
     "Mitsolen": {
         "system-name": "Mitsolen",
         "connections": [
-            {"system-name": "Itamo", "distance": 90},
-            {"system-name": "Mahtista", "distance": 15}
+            {"system-name": "Itamo", "distance": 1},
+            {"system-name": "Mahtista", "distance": 1}
         ],
         "security-status": "High"
     },
     "Mahtista": {
         "system-name": "Mahtista",
         "connections": [
-            {"system-name": "Mitsolen", "distance": 90}
+            {"system-name": "Mitsolen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Josameto": {
         "system-name": "Josameto",
         "connections": [
-            {"system-name": "Poinen", "distance": 90},
-            {"system-name": "Liekuri", "distance": 15},
-            {"system-name": "New Caldari", "distance": 15}
+            {"system-name": "Poinen", "distance": 1},
+            {"system-name": "Liekuri", "distance": 1},
+            {"system-name": "New Caldari", "distance": 1}
         ],
         "security-status": "High"
     },
     "Liekuri": {
         "system-name": "Liekuri",
         "connections": [
-            {"system-name": "Josameto", "distance": 90},
-            {"system-name": "Liekuri", "distance": 15},
-            {"system-name": "Poinen", "distance": 15},
-            {"system-name": "Obanen", "distance": 15}
+            {"system-name": "Josameto", "distance": 1},
+            {"system-name": "Liekuri", "distance": 1},
+            {"system-name": "Poinen", "distance": 1},
+            {"system-name": "Obanen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Poinen": {
         "system-name": "Poinen",
         "connections": [
-            {"system-name": "Nomaa", "distance": 90},
-            {"system-name": "Obanen", "distance": 15},
-            {"system-name": "Liekuri", "distance": 15},
-            {"system-name": "Josameto", "distance": 15}
+            {"system-name": "Nomaa", "distance": 1},
+            {"system-name": "Obanen", "distance": 1},
+            {"system-name": "Liekuri", "distance": 1},
+            {"system-name": "Josameto", "distance": 1}
         ],
         "security-status": "High"
     },
     "Obanen": {
         "system-name": "Obanen",
         "connections": [
-            {"system-name": "Poinen", "distance": 90},
-            {"system-name": "Liekuri", "distance": 15},
-            {"system-name": "Olo", "distance": 15}
+            {"system-name": "Poinen", "distance": 1},
+            {"system-name": "Liekuri", "distance": 1},
+            {"system-name": "Olo", "distance": 1}
         ],
         "security-status": "High"
     },
     "Olo": {
         "system-name": "Olo",
         "connections": [
-            {"system-name": "Ishisomo", "distance": 90},
-            {"system-name": "Obanen", "distance": 15},
-            {"system-name": "Osmon", "distance": 15}
+            {"system-name": "Ishisomo", "distance": 1},
+            {"system-name": "Obanen", "distance": 1},
+            {"system-name": "Osmon", "distance": 1}
         ],
         "security-status": "High"
     },
     "Ishisomo": {
         "system-name": "Ishisomo",
         "connections": [
-            {"system-name": "Airmia", "distance": 90},
-            {"system-name": "Sakkikainen", "distance": 15},
-            {"system-name": "Olo", "distance": 15}
+            {"system-name": "Airmia", "distance": 1},
+            {"system-name": "Sakkikainen", "distance": 1},
+            {"system-name": "Olo", "distance": 1}
         ],
         "security-status": "High"
     },
     "Sakkikainen": {
         "system-name": "Sakkikainen",
         "connections": [
-            {"system-name": "Vahunomi", "distance": 90},
-            {"system-name": "Friggi", "distance": 15},
-            {"system-name": "Airmia", "distance": 15},
-            {"system-name": "Ishisomo", "distance": 15}
+            {"system-name": "Vahunomi", "distance": 1},
+            {"system-name": "Friggi", "distance": 1},
+            {"system-name": "Airmia", "distance": 1},
+            {"system-name": "Ishisomo", "distance": 1}
         ],
         "security-status": "High"
     },
     "Vahunomi": {
         "system-name": "Vahunomi",
         "connections": [
-            {"system-name": "Sakkikainen", "distance": 90}
+            {"system-name": "Sakkikainen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Airmia": {
         "system-name": "Airmia",
         "connections": [
-            {"system-name": "Friggi", "distance": 90},
-            {"system-name": "Sakkikainen", "distance": 15},
-            {"system-name": "Ishisomo", "distance": 15}
+            {"system-name": "Friggi", "distance": 1},
+            {"system-name": "Sakkikainen", "distance": 1},
+            {"system-name": "Ishisomo", "distance": 1}
         ],
         "security-status": "High"
     },
     "Friggi": {
         "system-name": "Friggi",
         "connections": [
-            {"system-name": "Ihakana", "distance": 90},
-            {"system-name": "Otitoh", "distance": 15},
-            {"system-name": "Sakkikainen", "distance": 15},
-            {"system-name": "Airmia", "distance": 15}
+            {"system-name": "Ihakana", "distance": 1},
+            {"system-name": "Otitoh", "distance": 1},
+            {"system-name": "Sakkikainen", "distance": 1},
+            {"system-name": "Airmia", "distance": 1}
         ],
         "security-status": "High"
     },
     "Osmon": {
         "system-name": "Osmon",
         "connections": [
-            {"system-name": "Inaya", "distance": 90},
-            {"system-name": "Olo", "distance": 15},
-            {"system-name": "Korsiki", "distance": 15}
+            {"system-name": "Inaya", "distance": 1},
+            {"system-name": "Olo", "distance": 1},
+            {"system-name": "Korsiki", "distance": 1}
         ],
         "security-status": "High"
     },
     "Inaya": {
         "system-name": "Inaya",
         "connections": [
-            {"system-name": "Osmon", "distance": 90},
-            {"system-name": "Wuos", "distance": 15},
-            {"system-name": "Uminas", "distance": 15}
+            {"system-name": "Osmon", "distance": 1},
+            {"system-name": "Wuos", "distance": 1},
+            {"system-name": "Uminas", "distance": 1}
         ],
         "security-status": "High"
     },
     "Wuos": {
         "system-name": "Wuos",
         "connections": [
-            {"system-name": "Inaya", "distance": 90}
+            {"system-name": "Inaya", "distance": 1}
         ],
         "security-status": "High"
     },
     "Uminas": {
         "system-name": "Uminas",
         "connections": [
-            {"system-name": "Inaya", "distance": 90}
+            {"system-name": "Inaya", "distance": 1}
         ],
         "security-status": "High"
     },
     "Korsiki": {
         "system-name": "Olo",
         "connections": [
-            {"system-name": "Osmon", "distance": 90},
-            {"system-name": "Nuken", "distance": 15},
-            {"system-name": "Airaken", "distance": 15}
+            {"system-name": "Osmon", "distance": 1},
+            {"system-name": "Nuken", "distance": 1},
+            {"system-name": "Airaken", "distance": 1}
         ],
         "security-status": "High"
     },
     "Nuken": {
         "system-name": "Nuken",
         "connections": [
-            {"system-name": "Korsiki", "distance": 90}
+            {"system-name": "Korsiki", "distance": 1}
         ],
         "security-status": "High"
     },
     "Airaken": {
         "system-name": "Airaken",
         "connections": [
-            {"system-name": "Korsiki", "distance": 90},
-            {"system-name": "Oijanen", "distance": 15}
+            {"system-name": "Korsiki", "distance": 1},
+            {"system-name": "Oijanen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Oijanen": {
         "system-name": "Oijanen",
         "connections": [
-            {"system-name": "Akora", "distance": 90},
-            {"system-name": "Airaken", "distance": 15}
+            {"system-name": "Akora", "distance": 1},
+            {"system-name": "Airaken", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Akora": {
         "system-name": "Akora",
         "connections": [
-            {"system-name": "Oijanen", "distance": 90},
-            {"system-name": "Messoya", "distance": 15},
-            {"system-name": "Reisen", "distance": 15},
-            {"system-name": "Maila", "distance": 15}
+            {"system-name": "Oijanen", "distance": 1},
+            {"system-name": "Messoya", "distance": 1},
+            {"system-name": "Reisen", "distance": 1},
+            {"system-name": "Maila", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Reisen": {
         "system-name": "Reisen",
         "connections": [
-            {"system-name": "Akora", "distance": 90},
-            {"system-name": "Ikami", "distance": 15},
-            {"system-name": "Purjola", "distance": 15}
+            {"system-name": "Akora", "distance": 1},
+            {"system-name": "Ikami", "distance": 1},
+            {"system-name": "Purjola", "distance": 1}
         ],
         "security-status": "High"
     },
     "Ikami": {
         "system-name": "Ikami",
         "connections": [
-            {"system-name": "Hampinen", "distance": 90},
-            {"system-name": "Reisen", "distance": 15},
-            {"system-name": "Purjola", "distance": 15}
+            {"system-name": "Hampinen", "distance": 1},
+            {"system-name": "Reisen", "distance": 1},
+            {"system-name": "Purjola", "distance": 1}
         ],
         "security-status": "High"
     },
     "Purjola": {
         "system-name": "Purjola",
         "connections": [
-            {"system-name": "Ikami", "distance": 90},
-            {"system-name": "Maila", "distance": 15},
-            {"system-name": "Reisen", "distance": 15}
+            {"system-name": "Ikami", "distance": 1},
+            {"system-name": "Maila", "distance": 1},
+            {"system-name": "Reisen", "distance": 1}
         ],
         "security-status": "High"
     },
     "Maila": {
         "system-name": "Maila",
         "connections": [
-            {"system-name": "Akora", "distance": 90},
-            {"system-name": "Purjola", "distance": 15}
+            {"system-name": "Akora", "distance": 1},
+            {"system-name": "Purjola", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Messoya": {
         "system-name": "Messoya",
         "connections": [
-            {"system-name": "Akora", "distance": 90},
-            {"system-name": "Tasti", "distance": 15}
+            {"system-name": "Akora", "distance": 1},
+            {"system-name": "Tasti", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Tasti": {
         "system-name": "Tasti",
         "connections": [
-            {"system-name": "Messoya", "distance": 90},
-            {"system-name": "Otosela", "distance": 15}
+            {"system-name": "Messoya", "distance": 1},
+            {"system-name": "Otosela", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Otosela": {
         "system-name": "Otosela",
         "connections": [
-            {"system-name": "Tasti", "distance": 90},
-            {"system-name": "Uemon", "distance": 15},
-            {"system-name": "Akkio", "distance": 15}
+            {"system-name": "Tasti", "distance": 1},
+            {"system-name": "Uemon", "distance": 1},
+            {"system-name": "Akkio", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Akkio": {
         "system-name": "Akkio",
         "connections": [
-            {"system-name": "Otosela", "distance": 90}
+            {"system-name": "Otosela", "distance": 1}
         ],
         "security-status": "High"
     },
     "Uemon": {
         "system-name": "Uemon",
         "connections": [
-            {"system-name": "Otosela", "distance": 90},
-            {"system-name": "Paala", "distance": 15},
-            {"system-name": "Fuskonen", "distance": 15}
+            {"system-name": "Otosela", "distance": 1},
+            {"system-name": "Paala", "distance": 1},
+            {"system-name": "Fuskonen", "distance": 1}
         ],
         "security-status": "Low"
     },
     "Paala": {
         "system-name": "Paala",
         "connections": [
-            {"system-name": "Uemon", "distance": 90}
+            {"system-name": "Uemon", "distance": 1}
         ],
         "security-status": "High"
     },
     "Fuskonen": {
         "system-name": "Fuskonen",
         "connections": [
-            {"system-name": "Uemon", "distance": 90}
+            {"system-name": "Uemon", "distance": 1}
         ],
         "security-status": "High"
     }
