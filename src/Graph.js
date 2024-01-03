@@ -78,7 +78,7 @@ function Graph({ selectedPath }) {
         
     }, [selectedPath]);
 
-    return <svg ref={svgRef} width={1024} height={900}></svg>;
+    return <svg ref={svgRef} width={1400} height={1000}></svg>;
 }
 
 export default Graph;
