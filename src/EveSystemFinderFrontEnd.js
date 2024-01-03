@@ -52,9 +52,16 @@ function App() {
     event.preventDefault();
     const ignoredSystems = ignored.split(',').map(system => system.trim());
     const pathResult = dijkstra(systems, start, end, parseFloat(speed), ignoreLowSecurity, ignoredSystems);
-
-    setResult(`Path: ${pathResult.path.join(' -> ')}, Total Time: ${pathResult.totalTime} seconds`);
+  
+    if (pathResult.path && pathResult.totalTime != null) {
+      // Valid path found, display path and total time
+      setResult(`Path: ${pathResult.path.join(' -> ')}, Total Time: ${pathResult.totalTime} seconds`);
+    } else {
+      // No valid path found, display error message
+      setResult(pathResult.message || "Route not possible under the given constraints.");
+    }
   };
+  
 
   
 
