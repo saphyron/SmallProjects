@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import './App.css';
 import { dijkstra } from './Pathfinder';
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
+import Graph from './Graph';
+
+
 const evesystems = require('./EveSystemsTheForge.json')
+
 
 // Example system data
 const systems = evesystems;
@@ -16,6 +20,8 @@ function App() {
   const [startSuggestions, setStartSuggestions] = useState([]);
   const [endSuggestions, setEndSuggestions] = useState([]);
   const [ignored, setIgnored] = useState('');
+  // Additional state in the App component
+  const [selectedPath, setSelectedPath] = useState([]);
 
   const handleInputChange = (value, isStartLocation) => {
     if (isStartLocation) {
@@ -48,19 +54,20 @@ function App() {
     }
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const ignoredSystems = ignored.split(',').map(system => system.trim());
-    const pathResult = dijkstra(systems, start, end, parseFloat(speed), ignoreLowSecurity, ignoredSystems);
-  
-    if (pathResult.path && pathResult.totalTime != null) {
-      // Valid path found, display path and total time
-      setResult(`Path: ${pathResult.path.join(' -> ')}, Total Time: ${pathResult.totalTime} seconds`);
-    } else {
-      // No valid path found, display error message
-      setResult(pathResult.message || "Route not possible under the given constraints.");
-    }
-  };
+// Modify the handleSubmit function to also update selectedPath
+const handleSubmit = (event) => {
+  event.preventDefault();
+  const ignoredSystems = ignored.split(',').map(system => system.trim());
+  const pathResult = dijkstra(systems, start, end, parseFloat(speed), ignoreLowSecurity, ignoredSystems);
+
+  if (pathResult.path && pathResult.totalTime != null) {
+    setResult(`Path: ${pathResult.path.join(' -> ')}, Total Time: ${pathResult.totalTime} seconds`);
+    setSelectedPath(pathResult.path); // Update the selected path
+  } else {
+    setResult(pathResult.message || "Route not possible under the given constraints.");
+    setSelectedPath([]); // Clear the path if not found
+  }
+};
   
 
   
@@ -127,7 +134,10 @@ function App() {
   placeholder="Ignored Systems (comma-separated)"
 />
       </form>
+      
       {result && <div className="result">{result}</div>}
+      // Pass selectedPath to the Graph component
+      <Graph selectedPath={selectedPath} />
     </div>
   );
 }
