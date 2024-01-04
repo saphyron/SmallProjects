@@ -59,6 +59,16 @@ function Graph({ selectedPath }) {
             .attr("dx", 10)
             .attr("dy", ".35em");
 
+        // Define zoom behavior
+        const zoom = d3.zoom()
+            .scaleExtent([0.5, 10]) // Limit the scale to 0.5x - 10x
+            .on("zoom", (event) => {
+                svg.selectAll('g').attr('transform', event.transform);
+            });
+
+        // Apply the zoom behavior to the SVG element
+        svg.call(zoom);
+
         simulation.on("tick", () => {
             link
                 .attr("x1", d => d.source.x)
@@ -75,7 +85,9 @@ function Graph({ selectedPath }) {
             .attr("x", d => d.x)
             .attr("y", d => d.y);
         });
-        
+        // Apply initial zoom (optional)
+        svg.call(zoom.transform, d3.zoomIdentity); // Resets to default zoom level and position
+
     }, [selectedPath]);
 
     return <svg ref={svgRef} width={1400} height={1000}></svg>;
