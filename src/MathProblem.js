@@ -1,6 +1,6 @@
 function simulate(iterations, health, regenPer5Sec, damageMin, damageMax, hitIntervalSec,
     healthPercentageForCritical, healthPercentageForHeal, food, foodHealingPerUnit,
-    initialMasteryLevel) {
+    initialMasteryLevel, gearBonus, globalMastery) {
     let totalTimeToDie = 0;
     let minTimeToDie = Number.MAX_VALUE;
     let maxTimeToDie = 0;
@@ -12,6 +12,26 @@ function simulate(iterations, health, regenPer5Sec, damageMin, damageMax, hitInt
     const healedHealth = health * (healthPercentageForHeal / 100);
 
     for (let i = 0; i < iterations; i++) {
+        let tenProcentBonus = false;
+        let twntyfiveProcentBonus = false;
+        let fiftyProcentBonus = false;
+        let ninetyfiveProcentBonus = false;
+        switch(globalMastery) {
+            case globalMastery > 10:
+                tenProcentBonus = true;
+                break;
+            case globalMastery > 25:
+                twntyfiveProcentBonus = true;
+                break;
+            case globalMastery > 50:
+                fiftyProcentBonus = true;
+                break;
+            case globalMastery > 95:
+                ninetyfiveProcentBonus = true;
+                break;
+            default:
+                break;
+        }
         let currentHealth = health;
         let foodRemaining = food;
         let masteryLevel = initialMasteryLevel;
@@ -21,6 +41,12 @@ function simulate(iterations, health, regenPer5Sec, damageMin, damageMax, hitInt
         let time = 0;
         let isAlive = true;
         let hasWon = false;
+        
+        let perception = 140;
+        let equipmentBonus = gearBonus;
+        if(twntyfiveProcentBonus) {
+            hitIntervalSec -= 0.2;
+        }
 
         // Calculating food per heal
         const foodPerHeal = Math.ceil((healedHealth - criticalHealthThreshold) / foodHealingPerUnit);
@@ -32,7 +58,17 @@ function simulate(iterations, health, regenPer5Sec, damageMin, damageMax, hitInt
 
         // Function to calculate success chance
         function getSuccessChance() {
-            return 1 - (masteryLevel + 10) / 110;
+            let bonuses = 0;
+            if(tenProcentBonus) {
+                bonuses += 30;
+            }
+            if(ninetyfiveProcentBonus) {
+                bonuses += 100;
+            }
+            if (masteryLevel >= 99) {
+                return 1 - (masteryLevel + 10 + 75 + equipmentBonus + bonuses) / perception
+            }
+            return 1 - (masteryLevel + 10 + equipmentBonus + bonuses) / perception;
         }
 
         // Function to calculate mastery bar increase
@@ -42,6 +78,7 @@ function simulate(iterations, health, regenPer5Sec, damageMin, damageMax, hitInt
 
         // Main simulation loop
         while (isAlive && !hasWon) {
+            
             time += hitIntervalSec;
 
             if (Math.random() < winChance) {
@@ -57,9 +94,12 @@ function simulate(iterations, health, regenPer5Sec, damageMin, damageMax, hitInt
             // Check for success (replaces getting hit)
             if (Math.random() < getSuccessChance()) {
                 currentHealth -= getRandomDamage();
-
+                let masterBonus = 0;
+                if(twntyfiveProcentBonus) {
+                    masterBonus = 1.03;
+                }
                 // Increase Mastery Bar
-                masteryBar += getMasteryBarIncrease();
+                masteryBar += (getMasteryBarIncrease() * masterBonus);
                 if (masteryBar >= 100) {
                     masteryLevel++;
                     masteryBar = 0;
@@ -99,4 +139,4 @@ function simulate(iterations, health, regenPer5Sec, damageMin, damageMax, hitInt
 }
 
 // Example usage
-simulate(100000, 100, 1, 1, 22, 2.8, 20, 40, 7500, 3, 65);
+simulate(10000, 100, 1, 1, 31, 2.8, 20, 40, 3600, 3, 1, 40, 8);
