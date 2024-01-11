@@ -42,7 +42,7 @@ function simulate(iterations, health, regenPer5Sec, damageMin, damageMax, hitInt
 
         if(iterations > 10000) {
             console.log('Too many iterations');
-            console.log('Code is going to take more than 5 min to compile');
+            console.log('Code is going to take more than 1 hour to compile');
             console.log('');
             console.log('');
             console.log('');
