@@ -173,7 +173,7 @@ function simulate(iterations, health, regenPer5Sec, damageMin, damageMax, hitInt
         }
         console.log(`Iteration ${i + 1} Execution Time: ${duration.toFixed(2)} seconds`);
 
-        // Check if iteration took longer than 10 seconds
+        // Check if iteration took longer than 20 seconds
         if (duration > 20) {
             console.log(`Iteration ${i + 1} took too long, stopping simulation`);
             break;
