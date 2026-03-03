@@ -498,6 +498,7 @@
             {"system-name": "Vaankalen", "distance": 1},
             {"system-name": "Kylmabe", "distance": 1},
             {"system-name": "Ahtulaima", "distance": 1},
+            {"system-name": "Maurasi", "distance": 1},
             {"system-name": "Mitsolen", "distance": 1}
         ],
         "security-status": "High"

@@ -136,7 +136,7 @@ const handleSubmit = (event) => {
       </form>
       
       {result && <div className="result">{result}</div>}
-      // Pass selectedPath to the Graph component
+      {/*Pass selectedPath to the Graph component*/}
       <Graph selectedPath={selectedPath} />
     </div>
   );
