@@ -21,6 +21,7 @@ function getMasteryBarIncrease(masteryLevel) {
 function simulate(iterations, health, regenPer5Sec, damageMin, damageMax, hitIntervalSec,
     healthPercentageForCritical, healthPercentageForHeal, food, foodHealingPerUnit,
     initialMasteryLevel, gearBonus, globalMastery, relic, perceptionCheck) {
+    let startTime = Date.now(); // Start time of the simulation
     let totalTimeToDie = 0;
     let minTimeToDie = Number.MAX_VALUE;
     let maxTimeToDie = 0;
@@ -179,7 +180,7 @@ function simulate(iterations, health, regenPer5Sec, damageMin, damageMax, hitInt
             break;
         }
     }
-
+    let elapsedTime = (Date.now() - startTime) / 1000; // Elapsed time in seconds
     let avgTimeToDie = totalTimeToDie / (iterations - totalWins);
     let avgTimeToWin = totalWins > 0 ? totalTimeToWin / totalWins : 0;
 
@@ -192,6 +193,8 @@ function simulate(iterations, health, regenPer5Sec, damageMin, damageMax, hitInt
     console.log(`Total Wins: ${totalWins} out of ${iterations} or a ${winChance.toFixed(2)}% chance of winning.`);
     console.log(`Average Time to Win: ${avgTimeToWin.toFixed(2)} seconds`);
     console.log(`Highest Mastery Level Achieved: ${highestMasteryLevel}`); // Print the highest mastery level
+    console.log("========Simulation Complete========");
+    console.log(`Total Simulation Time: ${elapsedTime.toFixed(2)} seconds`);
 
 }
 
@@ -199,4 +202,4 @@ function simulate(iterations, health, regenPer5Sec, damageMin, damageMax, hitInt
 // Example usage
 // iterations, health, regenPer5Sec, damageMin, damageMax, hitIntervalSec, healthPercentageForCritical, healthPercentageForHeal, 
 // //food, foodHealingPerUnit, initialMasteryLevel, gearBonus, globalMastery, relic, perceptionCheck
-simulate(10000, 100, 1, 1, 31, 2.8, 20, 40, 3600, 3, 1, 40, 14, true, 140);
+simulate(1000, 100, 1, 1, 31, 2.8, 20, 40, 3600, 3, 1, 40, 14, true, 140);
